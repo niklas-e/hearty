@@ -10,4 +10,4 @@ Clone/download files and open `index.html` in browser. Or upload to some web ser
 
 ## License
 
-MIT | Copyright niklas-e
+[MIT | Copyright Niklas Engblom](./LICENSE)
