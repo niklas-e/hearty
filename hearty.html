@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<script src="jquery.min.js"></script>
+		<script src="jquery.throwable.js"></script>
+		<style>
+			@keyframes pulse {
+				0% {
+				 transform: scale(1, 1);
+				}
+
+				50% {
+				 transform: scale(1.2, 1.2);
+				}
+
+				100% {
+				transform: scale(1, 1);
+				}
+			}
+
+		
+			html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Indie Flower'; }
+			.fa-heart:not(#letter-heart),
+			img {
+				position: absolute;
+			}
+			#special {
+				animation: pulse 1s linear infinite;
+				cursor: pointer;
+			}
+			
+			#text {
+				position: absolute;
+				left: 50%;
+				top: 50px;
+			}
+			
+			#letter {
+				position: absolute;
+				top: 150%;
+				left: 50%;
+				width: 500px;
+				margin-left: -250px;
+			}
+		</style>
+		<script src="hearty.js"></script>
+	</head>
+	<body>
+		<i class="fa fa-heart fa-5x" id="special" style="left: 50%; color: red;"></i>
+		<div id="letter">
+			<p>
+				Dear XXXXXX,
+				<br><br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod mauris et nibh iaculis, ut scelerisque diam finibus.
+				<br><br>
+				Nullam ut mauris et augue pulvinar sagittis nec et massa. Phasellus fringilla ipsum quis sem tincidunt congue.
+				<br><br>
+				In molestie eros sed tortor ornare, eget convallis sapien accumsan. Aliquam malesuada leo vitae mi posuere, tincidunt volutpat elit placerat. Fusce dapibus mauris diam, sed elementum mi euismod ac.
+				<br><br>
+				Proin blandit augue id ante cursus pretium. Lorem! <i class="fa fa-heart" style="color:red" id="letter-heart"></i>
+			</p>
+		</div>
+	</body>
+</html>
